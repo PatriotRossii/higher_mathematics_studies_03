@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{amsmath}
+
+\usepackage{pgfplots}
+\usepackage{sagetex}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{polar}
+\pgfplotsset{compat=newest}
+
+\usepackage{multienum}
+\usepackage{geometry}
+\geometry{
+    left=1cm,right=1cm,top=2cm,bottom=2cm
+}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+
+\newtheorem{definition}{Определение}
+\newtheorem{theorem}{Теорема}
+
+\DeclareMathOperator{\sign}{sign}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black
+}
+
+\title{Высшая математика}
+\author{Лисид Лаконский}
+\date{May 2023}
+
+\begin{document}
+\raggedright
+
+\maketitle
+
+\tableofcontents
+\pagebreak
+
+\section{Действия с комплексными числами, вариант №21}
+
+\subsection{Задание №1}
+
+Вычислить $a + b$, $a b$, $a / b$, если
+
+$$
+a = 3 + 3 i, \ b = 2 - i
+$$
+
+\textbf{Решение.}
+
+\begin{enumerate}
+    \item $a = 3 + 3 i$, $b = 2 - i$ \\
+    $a + b = (3 + 3 i) + (2 - i) = 5 + 2 i$ \\
+    $ab = (3 + 3 i) (2 - i) = 6 - 3i + 6i - 3 i^2 = 9 + 3 i $ \\
+    $\frac{a}{b} = \frac{3 + 3 i}{2 - i} = \frac{(3 + 3 i)(2 + i)}{(2 - i)(2 + i)} = \frac{6 + 3 i + 6 i + 3 i^2}{2^2 - i^2} = \frac{3 + 9i}{5} = \frac{3}{5} + \frac{9 i}{5}$
+\end{enumerate}
+
+\textbf{Ответ:} см. выше
+
+\subsection{Задание №2}
+
+Найти все значения корня
+
+$$
+\sqrt[4]{\frac{1}{16}}
+$$
+
+\textbf{Решение.}
+
+$\sqrt[4]{\frac{1}{16}} = \frac{1}{2}$, $\sqrt[4]{\frac{1}{16}} = -\frac{1}{2}$, $\sqrt[4]{\frac{1}{16}} = \frac{1 i}{2}$, $\sqrt[4]{\frac{1}{16}} = - \frac{1 i}{2}$
+
+\hfill
+
+\textbf{Ответ:} $\frac{1}{2}$, $-\frac{1}{2}$, $\frac{i}{2}$, $-\frac{i}{2}$
+
+\subsection{Задание №3}
+
+Вычислить
+
+$$
+(\frac{1 + i}{\sqrt{2}})^{2 i}
+$$
+
+\textbf{Решение.}
+
+$(\frac{1 + i}{\sqrt{2}})^{2 i} = e^{(2 i) Ln (\frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}})} = e^{(2 i) (\ln \sqrt{\frac{1}{4}} + i (\arctg 1 + 2 \pi n))} = e^{(2 i) (\ln \sqrt{\frac{1}{4}} + i (\frac{\pi}{4} + 2 \pi n))}$
+
+\hfill
+
+\textbf{Ответ:} $e^{(2 i) (\ln \sqrt{\frac{1}{4}} + i (\frac{\pi}{4} + 2 \pi n))}$
+
+\end{document}
